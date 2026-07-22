@@ -1,0 +1,42 @@
+{
+  "name": "WorkflowLog",
+  "type": "object",
+  "properties": {
+    "workflow_id": {
+      "type": "string"
+    },
+    "workflow_name": {
+      "type": "string"
+    },
+    "trigger_event": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "success",
+        "failed",
+        "pending"
+      ],
+      "default": "pending"
+    },
+    "input_data": {
+      "type": "string",
+      "description": "JSON string of trigger data"
+    },
+    "output_data": {
+      "type": "string",
+      "description": "JSON string of execution result"
+    },
+    "error_message": {
+      "type": "string"
+    },
+    "duration_ms": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "workflow_id",
+    "workflow_name"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "AppConfig",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Application name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Application description"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "active",
+        "archived"
+      ],
+      "default": "draft"
+    },
+    "config_json": {
+      "type": "string",
+      "description": "JSON configuration string defining the entire application"
+    },
+    "version": {
+      "type": "number",
+      "default": 1
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name from lucide-react"
+    },
+    "color": {
+      "type": "string",
+      "description": "Theme color hex code"
+    }
+  },
+  "required": [
+    "name",
+    "config_json"
+  ]
+}

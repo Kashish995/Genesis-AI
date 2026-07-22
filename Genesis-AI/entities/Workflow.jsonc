@@ -1,0 +1,45 @@
+{
+  "name": "Workflow",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Workflow name"
+    },
+    "app_config_id": {
+      "type": "string",
+      "description": "Associated app config ID"
+    },
+    "trigger_entity": {
+      "type": "string",
+      "description": "Entity that triggers this workflow"
+    },
+    "trigger_event": {
+      "type": "string",
+      "enum": [
+        "create",
+        "update",
+        "delete"
+      ],
+      "description": "CRUD event that triggers this workflow"
+    },
+    "conditions": {
+      "type": "string",
+      "description": "JSON string of conditions to evaluate"
+    },
+    "actions": {
+      "type": "string",
+      "description": "JSON string of actions to execute"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "trigger_entity",
+    "trigger_event",
+    "actions"
+  ]
+}

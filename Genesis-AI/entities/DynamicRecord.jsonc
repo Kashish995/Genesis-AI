@@ -1,0 +1,23 @@
+{
+  "name": "DynamicRecord",
+  "type": "object",
+  "properties": {
+    "entity_type": {
+      "type": "string",
+      "description": "The entity type this record belongs to"
+    },
+    "app_config_id": {
+      "type": "string",
+      "description": "Associated app config ID"
+    },
+    "data": {
+      "type": "string",
+      "description": "JSON string of the record data"
+    }
+  },
+  "required": [
+    "entity_type",
+    "app_config_id",
+    "data"
+  ]
+}
