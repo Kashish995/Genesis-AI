@@ -4,7 +4,13 @@
 > Define data-driven mini-apps through JSON schemas, preview and run them live,
 > and wire up CRUD-triggered workflows — all from a single, unified workspace.
 
+## 🚀 Live Demo
+
+**🌐 Application:** https://tunneling-genesis-app-core.base44.app
+
 ---
+
+## 📖 Table of Contents
 
 ## 📖 Table of Contents
 
